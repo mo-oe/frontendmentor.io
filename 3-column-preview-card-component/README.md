@@ -35,7 +35,7 @@ I'm still learning trying to tackle every little detail about CSS, HTML and JS.
 
 ### Useful resources
 
-- [FreCodeCamp](https://www.freecodecamp.org) - I started learning with this legend - still have alot to learn.
+- [FreeCodeCamp](https://www.freecodecamp.org) - I started learning with this legend - still have alot to learn.
 - [Chat GPT](https://chat.openai.com) - GPT is the future for doing things. don't forget this for solving little snags.
 
 ## Author
