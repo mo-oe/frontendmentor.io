@@ -1,0 +1,47 @@
+# Frontend Mentor - QR code component solution
+
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
+
+
+### Links
+
+- [Solution URL](https://github.com/mo-oe/frontendmentor.io/tree/main/3-column-preview-card-component)
+- [Live Site URL](https://mo-oe.github.io/frontendmentor.io/3-column-preview-card-component/)
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+
+### What I learned
+
+flex is the lit next up is the grid.
+
+### Continued development
+
+I'm still learning trying to tackle every little detail about CSS, HTML and JS.
+**
+
+### Useful resources
+
+- [FreCodeCamp](https://www.freecodecamp.org) - I started learning with this legend - still have alot to learn.
+- [Chat GPT](https://chat.openai.com) - GPT is the future for doing things. don't forget this for solving little snags.
+
+## Author
+
+- Frontend Mentor - [@mo-oe](https://www.frontendmentor.io/profile/mo-oe)
+- Twitter - [@overdo9e](https://www.twitter.com/overdo9e)
+
+
+
