@@ -17,7 +17,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![Alt text](screenshots/Desktop screenshot 1440px.png)
+[Desktop Screenshot](qr-code-component-main/screenshots/Desktop screenshot 1440px.png)
 
 ### Links
 
