@@ -4,7 +4,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Table of contents
 
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -13,11 +12,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
-
-
-### Screenshot
-
-[Desktop Screenshot](qr-code-component-main/screenshots/Desktop screenshot 1440px.png)
 
 ### Links
 
