@@ -6,7 +6,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
   - [Links](#links)
   - [Built with](#built-with)
-  - [Screenshots](# screenshots)
+  - [Screenshots](#screenshots)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
