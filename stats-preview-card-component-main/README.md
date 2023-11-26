@@ -17,7 +17,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### Links
 
 - [Solution URL](https://github.com/mo-oe/frontendmentor.io/tree/main/stats-preview-card-component-main)
-- [Live Site URL](https://mo-oe.github.io/frontendmentor.io/frontendmentor.io/stats-preview-card-component-main/)
+- [Live Site URL](https://mo-oe.github.io/frontendmentor.io/stats-preview-card-component-main/)
 
 
 ### Built with
