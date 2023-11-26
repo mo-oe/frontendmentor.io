@@ -18,7 +18,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 - [Solution URL](https://github.com/mo-oe/frontendmentor.io/tree/main/3-column-preview-card-component)
 - [Live Site URL](https://mo-oe.github.io/frontendmentor.io/3-column-preview-card-component/)
-- 
+
 
 ### Built with
 
@@ -28,8 +28,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshots
 
-- [Desktop 1440px](screenshot/Desktop-screenshot-1440px.png)
-- [Mobile 375px](screenshot/Mobile-screenshot-375px.png)
+- [Desktop 1440px](screenshots/Desktop-screenshot-1440px.png)
+- [Mobile 375px](screenshots/Mobile-screenshot-375px.png)
 
 
 ### What I learned
