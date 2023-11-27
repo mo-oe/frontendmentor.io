@@ -49,7 +49,7 @@ I'm still learning trying to tackle every little detail about CSS, HTML and JS.
 ## Author
 
 - Frontend Mentor - [@mo-oe](https://www.frontendmentor.io/profile/mo-oe)
-- Reddit - [@CourageEquivalent653)](https://www.reddit.com/u/CourageEquivalent653)
+- Reddit - [@CourageEquivalent653](https://www.reddit.com/u/CourageEquivalent653)
 - Twitter - [@overdo9e](https://www.twitter.com/overdo9e)
 
 
