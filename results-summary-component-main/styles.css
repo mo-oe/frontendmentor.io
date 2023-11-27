@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box {
+    display: flex;
+    width: 700px;
+    height: 470px;
+    background-color: white;
+    box-shadow: 25px 25px 200px hsl(224, 30%, 27%, 0.2);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+ 
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    
+ 
+    
+}
+.summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+   
+}
+.summary-header {
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 12px;
+    
+}
+.percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   
+   
+
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-percentage {
+    position: relative;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    
+}
+.result-header {
+    position: relative;
+    color: hsla(241, 100%, 89%, 0.9);
+    top: 10%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+
+}
+.grade {
+    position: relative;
+    top: 22%;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 30px;
+}
+.remarks {
+    position: relative;
+    color: hsla(241, 100%, 89%, 0.6);
+    top: 25%;
+    text-align: center; 
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 300px;
+    
+}
+.hundred {
+    color: hsla(241, 100%, 89%, 0.6);
+    padding-left: 7px;
+
+}
+
+.details {
+    
+    width: 100%;
+    max-width: 280px;
+    
+}
+.summary ul li {
+    
+    list-style-type: none;
+    padding: 15px;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+    
+}
+img {
+    margin-left: 3%;
+    margin-right: 5%;
+}
+.summary ul li:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.07);
+}
+.summary ul li:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.07);
+}
+.summary ul li:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.07);
+}
+.summary ul li:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.07);
+}
+.group-a {
+    display: flex;
+    justify-content: center;
+}
+
+
+.reaction {
+    color: hsla(0, 100%, 67%, 0.8);
+}
+.memory {
+    color: hsla(39, 100%, 56%, 0.8);
+}
+.verbal {
+    color: hsla(166, 100%, 37%, 0.8);
+}
+.visual {
+    color: hsla(234, 85%, 45%, 0.8);
+}
+.summary ul li .wrap-span .hundred {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+button {
+  
+    width: 100%;
+    max-width: 280px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsla(0, 0%, 100%, 0.9);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button:hover {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    
+}
+@media screen and (max-width: 500px) {
+    .main {
+        justify-content: unset;
+        align-items: flex-start;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    .box {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+        height: 100vh;
+        width: 100%;
+        border-radius: unset;
+        
+    }
+    .result {
+        width: 100%;
+        position: unset;
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+        padding-bottom: 30%;
+        
+    }
+    .remarks {
+        max-width: 350px;
+    }
+    .summary {
+
+        width: 100%;
+        border-radius: unset;
+        box-shadow: unset;
+        height: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+       
+      
+    }
+    .summary ul li {
+        margin-bottom: 5%;
+        padding: 20px;
+    }
+    .details, .summary-header, button {
+        max-width: unset;
+    }
+    
+
+
+
+}
