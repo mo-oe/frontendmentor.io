@@ -52,6 +52,7 @@ span {
 .main {
     display: grid;
     grid-template-columns: auto;
+  
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -61,10 +62,11 @@ span {
     max-height: 590px;
     overflow: hidden;
     margin-bottom: 60px;
+   
 }
 div {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     height: 250px;
     padding: 30px;
     border-radius: 5px;
@@ -109,11 +111,11 @@ h2 {
 }
 .feature-logo {
     position: relative;
-    top: 30%;
-    left: 80%;
+    top: 20%;
+    left: 75%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1158px) {
     body {
         height: 100%;
     }
@@ -126,27 +128,20 @@ h2 {
     div {
         width: 100%;
         max-width: unset;
-        height: 250px;
-        
-        
     }
     header, h1, .caption {
         padding-left: 20px;
         padding-right: 20px;
-
     }
     header, h1 {
         font-size: 25px;
     }
-
 
     span {
         display: inline;
     }
     .discription {
         width: 88%;
-        
-
     }
     .supervisor {
         
