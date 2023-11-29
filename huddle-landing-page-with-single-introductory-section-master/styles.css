@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    
+}
+header {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    
+}
+.logo {
+    margin-left: auto;
+    max-width: 10rem;
+}
+section {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 10% 10% 2%;
+    background: url(img/bg-desktop.svg) no-repeat center/cover;
+    overflow: hidden;
+
+}
+.preview-div {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+    
+}
+.preview {
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    height: 100vh;
+    grid-column: 2;
+    grid-row: 1 / 3;
+   
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+button {
+    width: 11rem;
+    height: 3rem;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px rgb(43, 41, 41);
+}
+button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.social {
+    position: relative;
+    top: 20vh;
+    margin-left: auto;
+    
+}
+a {
+    color: white;
+    margin-left: 1rem;
+   
+    
+}
+i {
+    
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+a .fa-facebook-f {
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
+    
+}
+i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    
+}
+@media screen and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        background: url(img/bg-mobile.svg) no-repeat ;
+        padding: 0;
+        gap: unset;
+        padding-top: 1%;
+        padding-bottom: 1%;
+       
+    }
+    header {
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .preview-div {
+        padding-right: 5%;
+        padding-left: 5%;
+
+    }
+    main {
+        align-items: center;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin-bottom: 2rem;
+    }
+    h1, p {
+        text-align: center;
+    }
+    button {
+        margin-bottom: 2rem;
+        width: 15rem;
+
+    }
+    .social {
+        position: unset;
+        margin: auto;
+    }
+    a:first-child { 
+        margin: 0;
+    }
+    
+
+}
