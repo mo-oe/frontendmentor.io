@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --body-back: hsl(225, 100%, 94%);
+    --button-back: hsl(245, 75%, 52%);
+    --heading-color: hsl(223, 47%, 23%);
+    --text-color: hsl(224, 23%, 55%);
+    --section-back: hsl(225, 100%, 98%);
+    --span-back: hsla(225, 100%, 94%, 0.25);
+    --shadow-color: hsla(223, 47%, 23%, 0.3);
+}
+html {
+    background-color: var(--body-back);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/pattern-background-desktop.svg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;    
+    background-color: var(--section-back);
+    border-radius: 10px;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.illus-div {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.illus-pic {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+h1 {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+
+}
+p {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.plan-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--span-back);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    
+}
+.music-logo {
+    margin-right: 1rem;
+}
+.plan-span {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.bld-text {
+    color: var(--heading-color);
+    font-weight: 700;
+    
+}
+.norm-text {
+    color: var(--text-color);
+
+}
+a {
+    color: var(--button-back);
+    font-weight: 700;
+}
+a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+button {
+    width: 100%;
+    min-height: 2.5rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    
+}
+.proceed {
+    color: var(--section-back); 
+    background-color: var(--button-back);
+    margin-bottom: 1rem;    
+    z-index: 1;
+    box-shadow: 1px 15px 15px var(--shadow-color);
+
+    
+}
+.cancel {
+    color: var(--text-color);
+    background-color: transparent;
+}
+.proceed:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.cancel:hover {
+    color: var(--heading-color);
+    cursor: pointer;
+
+}
+@media screen and (max-width: 400px) {
+    body {
+        background: url(img/pattern-background-mobile.svg) no-repeat;
+
+    }
+    section {
+        max-width: 90%;
+    }
+}
