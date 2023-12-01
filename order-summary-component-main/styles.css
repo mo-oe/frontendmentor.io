@@ -11,6 +11,7 @@
     --section-back: hsl(225, 100%, 98%);
     --span-back: hsla(225, 100%, 94%, 0.25);
     --shadow-color: hsla(223, 47%, 23%, 0.3);
+    --shadow1-color: hsla(223, 47%, 23%, 0.1);
 }
 html {
     background-color: var(--body-back);
@@ -33,6 +34,7 @@ section {
     max-width: 25rem;    
     background-color: var(--section-back);
     border-radius: 10px;
+    box-shadow: 0.5px 20px 30px var(--shadow1-color);
 
 }
 main {
