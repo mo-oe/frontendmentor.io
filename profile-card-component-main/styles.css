@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --heading-color: hsl(229, 23%, 23%);
+    --norm-text: hsl(227, 10%, 46%);
+    --body-back: hsl(185, 75%, 39%);
+    --span-text: hsl(0, 0%, 59%);
+
+}
+html {
+    background-color: var(--body-back);
+    font-size: 18px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/bg-pattern-top.svg)  top left  / 50% 50%  no-repeat, url(img/bg-pattern-bottom.svg) bottom right / 50% 50% no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 25rem;
+}
+.cover {
+   
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+}
+.cover-img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+    width: 100%;
+    gap: 0.5rem;
+
+    
+}
+h1 {
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+.grey-text {
+    margin-left: 1rem;
+    color: var(--norm-text);
+    font-weight: 400;
+}
+h3 {
+    font-size: 1.2rem;
+    color: var(--norm-text);
+    font-weight: 400;
+
+}
+hr {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--span-text)
+}
+.profile-pic {
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3rem;
+    z-index: 2;
+
+}
+div {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    
+
+}
+.profile-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+h2 {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+}
+.grey-span {
+    color: var(--span-text);
+}
+@media screen and (max-width: 540px) {
+    main {
+        width: 85%;
+    }
+
+}
