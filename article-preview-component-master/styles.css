@@ -1,0 +1,254 @@
+:root {
+    --header-color: hsl(217, 19%, 35%);
+    --paragraph-color: hsl(214, 17%, 51%);
+    --bg-card: hsl(212, 23%, 69%);
+    --bg-color: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg-color);
+}
+
+section {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.main-container-div {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 700px;
+    gap: 30px;
+
+}
+
+.bg-img-div {
+    background-image: url(images/drawers.jpg);
+    background-size: 125% 100%;
+    background-position: cover;
+    min-width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.description-div {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    padding: 20px 20px 10px 0;
+
+}
+
+h1 {
+    color: var(--header-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.caption {
+    color: var(--paragraph-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.author {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.name-date {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    gap: 5px
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--header-color);
+
+}
+
+.date {
+    font-weight: 500;
+    color: var(--paragraph-color);
+}
+
+button {
+    width: 40px;
+    min-height: 40px;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--bg-color);
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+button i {
+    font-size: 1.2rem;
+    color: var(--header-color);
+
+}
+
+.hidden-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 60%;
+    bottom: 100%;
+}
+
+.social {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    background-color: var(--header-color);
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.share-text {
+    font-weight: 500;
+    color: var(--paragraph-color);
+    letter-spacing: 3px;
+}
+
+.triangle {
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 13px solid var(--header-color);
+
+}
+
+.hide-me {
+    transition: 1.2s ease-in all;
+    display: none;
+}
+
+.bg-button {
+    transition: 0.2s ease-in all;
+    background-color: var(--header-color);
+}
+
+.icon-color {
+    transition: 0.2s ease-in all;
+    color: #fff;
+}
+
+.change-bg {
+    background-color: var(--header-color);
+}
+
+.remove-style {
+    background-color: var(--paragraph-color);
+
+
+}
+
+@media screen and (max-width: 865px) {
+    section {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .main-container-div {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+
+    }
+
+    .description-div {
+        width: unset;
+        justify-content: space-evenly;
+        padding: 0;
+
+
+    }
+
+    h1 {
+        padding: 20px 30px 0 30px;
+    }
+
+    .bg-img-div {
+        min-width: unset;
+        background-position: cover;
+        background-size: 100% 100%;
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .author {
+        position: unset;
+        width: 100%;
+        padding: 15px 30px 15px 30px;
+        margin: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .hidden-menu {
+        position: unset;
+        width: 100%;
+    }
+
+    .social {
+        width: 100%;
+    }
+    .caption {
+        padding: 0px 30px 0 30px;
+        
+        
+        
+    }
+   
+}
