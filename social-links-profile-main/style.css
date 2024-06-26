@@ -1,0 +1,100 @@
+:root {
+    --text-color: hsl(0, 0%, 100%);
+    --button-bg-color: hsl(0, 0%, 20%);
+    --card-bg-color: hsl(0, 0%, 12%);
+    --body-bg-color:hsl(0, 0%, 8%);
+    --h2-color: hsl(75, 94%, 57%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+body {
+    font-size: 14px;
+    background-color: var(--body-bg-color);
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-bg-color);
+    padding: 3em 1em;
+}
+section, div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    gap: 2em;
+    background-color: var(--card-bg-color);
+    width: 500px;
+    min-height: 900px;
+    border-radius: 10px;
+    padding: 3em;
+}
+.header {
+    align-items: center;
+    gap: 1em
+}
+img {
+    border-radius: 50%;
+    width: 150px;
+    min-height: 150px;
+    margin-bottom: 3em;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.7em;
+    color: var(--h2-color);
+    font-weight: 700;
+}
+p {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    opacity: .5;
+
+}
+p:before {
+    content:  '"';
+
+}
+p:after {
+    content: '"';
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border: none;
+    margin-bottom: 1.2em;
+    padding: 1.4em;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+button:active, button:hover {
+    transition: 6ms ease-in all;
+    cursor: pointer;
+    background-color: var(--h2-color);
+    color: var(--card-bg-color);
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        padding: 1em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    
+}
