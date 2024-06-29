@@ -1,0 +1,109 @@
+:root {
+    --card-bg-color: hsl(0, 0%, 100%);
+    --body-bg-color: hsl(275, 100%, 97%);
+    --text-color: hsl(292, 16%, 49%);
+    --h1-color: hsl(292, 42%, 14%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--body-bg-color);
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: no-repeat url(images/background-pattern-desktop.svg), var(--body-bg-color);
+    background-size: 100%;
+
+    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg-color);
+    width: 600px;
+    padding: 2em 2em 3em 2em;
+    border-radius: 10px;
+    gap: 1.5em;
+
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+h1, h2 {
+    color: var(--h1-color);
+}
+h1 {
+    font-size: 3.5em;
+}
+.main-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+h2 {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    background: no-repeat url("images/icon-plus.svg");
+    background-position: center;
+    background-size: 100%;
+    color: transparent;
+    width: 30px !important;
+    height: 30px !important;
+}
+hr {
+    color: var(--text-color);
+    opacity: .5;
+}
+p {
+    display: none;
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: 400;
+}
+.collapse_icon {
+    background: no-repeat url("images/icon-minus.svg");
+    background-position: center;
+    background-size: 100%;
+}
+.expand_paragraph {
+    display: block;
+}
+@media screen and (max-width: 620px) {
+    main {
+        background: no-repeat url("images/background-pattern-mobile.svg"), var(--body-bg-color);
+        background-size: 100%;
+        padding: 1em;
+
+    }
+    section {
+        padding: 3em 1em;
+    }
+    section h1 {
+        font-size: 2.5em;
+
+    }
+    
+    h2 span {
+        max-width: 85%;
+    }
+
+
+}

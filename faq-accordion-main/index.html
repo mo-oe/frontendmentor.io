@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQ ACCORDION</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const introLink = document.getElementById("intro");
+            const freeLink = document.getElementById("free");
+            const portfolioLink = document.getElementById("portfolio");
+            const discordLink = document.getElementById("discord");
+            const introParagraph = document.getElementById("intro-paragraph");
+            const freeParagraph = document.getElementById("free-paragraph");
+            const portfolioParagraph = document.getElementById("portfolio-paragraph");
+            const discordParagraph = document.getElementById("discord-paragraph");
+
+            introLink.addEventListener("click", function () {
+                introLink.classList.toggle("collapse_icon");
+                introParagraph.classList.toggle("expand_paragraph");
+            });
+            freeLink.addEventListener("click", function () {
+                freeLink.classList.toggle("collapse_icon");
+                freeParagraph.classList.toggle("expand_paragraph");
+            });
+            portfolioLink.addEventListener("click", function () {
+                portfolioLink.classList.toggle("collapse_icon");
+                portfolioParagraph.classList.toggle("expand_paragraph");
+            });
+            discordLink.addEventListener("click", function () {
+                discordLink.classList.toggle("collapse_icon");
+                discordParagraph.classList.toggle("expand_paragraph");
+            });
+
+        });
+        
+    </script>
+</head>
+
+<body>
+    <main>
+        <section>
+
+            <div class="header">
+                <img class="logo" alt="Star" src="images/icon-star.svg" />
+                <h1>FAQs</h1>
+            </div>
+            <div class="main-points">
+                <h2><span>What is Frontend Mentor, and how will it help me?</span><a href="#" id="intro">HI</a></h2>
+                <p id="intro-paragraph">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding
+                    skills with projects in HTML, CSS and JavaScript. it's suitable for all levels and ideal for
+                    portfolio building.</p>
+            </div><hr>
+            <div class="main-points">
+                <h2><span>Is Frontend Mentor free?</span><a href="#" id="free">HI</a></h2>
+                <p id="free-paragraph">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+                    option providing access to a range of projects suitable for all skill levels.</p>
+            </div><hr>
+            <div class="main-points">
+                <h2><span>Can I use Frontend Mentor projects in my portfolio?</span><a href="#" id="portfolio">HI</a></h2>
+                <p id="portfolio-paragraph">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                    way to showcase your skills to potential employers!</p>
+            </div><hr>
+            <div class="main-points">
+                <h2><span>How can I get help if I'm stuck on a challenge?</span><a href="#" id="discord">HI</a></h2>
+                <p id="discord-paragraph">The best place to get help is inside Frontend Mentor's Discord community. There's a help
+                    channel where you can ask questions and seek support from other community members.</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
