@@ -1,0 +1,201 @@
+:root {
+  --h1-color: hsl(0, 6%, 24%);
+  --text-color: hsl(0, 36%, 70%);
+  --alert-color: hsl(0, 93%, 68%);
+  --border-color: hsla(0, 36%, 70%, 45%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.contact_section {
+background: no-repeat  url("images/bg-pattern-desktop.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  padding: 100px 170px;
+  margin-bottom: 50px;
+}
+/* header {
+    margin: 20px 0 0 20px;
+} */
+
+.profile_section {
+  width: 45%;
+  background: no-repeat center/100% url("images/hero-desktop.jpg");
+  background-size: cover;
+}
+.coming_soon {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 40px
+}
+header {
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 4em;
+    letter-spacing: .3em;
+    line-height: 1.2em;
+    color: var(--h1-color)
+}
+
+span, p {
+    color: var(--text-color)
+}
+span {
+    font-weight: 300;
+}
+p {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+form {
+    position: relative;
+}
+
+input {
+    outline: none;
+    padding: 20px 20px 20px 40px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 40px;
+    font-family: 'Josefin Sans', sans-serif;    
+    color: var(--h1-color);
+    font-size: 1.2em;
+}
+input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+button {
+    outline: none;
+    padding: 14.5px;
+    width: 100%;
+    max-width: 110px;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 40px;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;  
+    color: white;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    z-index: 3;
+}
+button:active, button:hover {
+    cursor: pointer;
+    background: linear-gradient(135deg, hsla(0, 80%, 86%, 50%), hsla(0, 74%, 74%, 50%));
+    box-shadow: 1px 10px 10px hsla(0, 80%, 86%, 50%);
+    transform: scale(1.05);
+}
+.warning {
+    display: none;
+    position: absolute;
+    right: 30%;
+    top: 20%;
+}
+.warning_text {
+    display: none;
+    margin: 10px 0 0 40px;
+    color: var(--alert-color);
+}
+
+.show {
+    display: block;
+}
+.warning_border {
+    border: 1px solid var(--alert-color);
+}
+.mobile-logo {
+    display: none;
+}
+@media only screen and (max-width: 1300px) {
+    .contact_section {
+        padding: 100px 150px;
+    }
+}
+@media only screen and (max-width: 1230px) {
+    .contact_section {
+        padding: 100px 130px;
+    }
+}
+@media only screen and (max-width: 1160px) {
+    .contact_section {
+        padding: 100px 110px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .contact_section {
+        padding: 100px 70px;
+    }
+}
+@media only screen and (max-width: 930px) {
+    .contact_section {
+        padding: 100px 50px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .contact_section {
+        padding: 100px 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    body {
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+        height: 100%;
+    }
+    main {
+        display: grid;
+        grid-template-rows: 34% 66%;
+        justify-content: unset;
+    }
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+        padding: 30px
+    }
+    .profile_section {
+        background: no-repeat center/100%  url('images/hero-mobile.jpg');
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    .contact_section {
+        background: none;
+        padding: 20px;
+        width: 100%;
+        justify-content: unset;
+    }
+    h1, .paragraph {
+        text-align: center;
+    }
+
+
+
+}
